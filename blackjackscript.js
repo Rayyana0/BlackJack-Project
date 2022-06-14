@@ -26,6 +26,7 @@ let addInitialCards = () => {
     cardItem.innerHTML+=initialCard1+"<br>";
     cardItem.innerHTML+=initialCard2+"<br>";
     console.log(cardList);
+    sumOfCards();
 }
 
 // Add a card
@@ -33,6 +34,7 @@ let addACard = () => {
     cardList.push(randomCardNumber());
     cardItem.innerHTML+=randomCardNumber()+"<br>";
     console.log(cardList);
+    sumOfCards();
 }
 
 // Sum of cardList
