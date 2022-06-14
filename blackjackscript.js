@@ -27,7 +27,7 @@ let addInitialCards = () => {
 
 // Flush the table of cards
 let restartGame = () => {
-    cardItem.remove(cardList);
+    window.location.reload();
 }
 
 // Start game function
