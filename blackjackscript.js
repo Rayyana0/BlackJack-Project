@@ -34,7 +34,9 @@ let addACard = () => {
     cardItem.innerHTML+=cardList+"<br>";
     console.log(cardList);
     sumOfCards();
-    if (sumOfCards() > 21) {
+    if (sumOfCards() == 21) {
+        console.log("Twenty-One!")
+    } else if (sumOfCards() > 21) {
         console.log("Bust! Try again.")
     } else {
         console.log("Draw another?")
