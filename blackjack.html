@@ -37,8 +37,10 @@
         }
         .message
         {
+            border:none;
             color:darkorange;
             width:50vw;
+            text-align:center;
         }
     </style>
 </head>
@@ -57,7 +59,7 @@
                 <tr><td style="border:2px solid black"><div id="card"></div></td></tr>
             </table>
 
-            <div><br><p input type="text" class="message" id="message"></p></div>
+            <div><br><input type="text" class="message" id="message"></div>
 
             <div>
 		        <br><br>
@@ -66,7 +68,7 @@
             </div>
             <div>
                 <br>
-                <input type="button" class="button" id="fold" value="fold">
+                <input type="button" class="button" id="fold" value="fold" onclick="alert('under construction')">
                 <input type="button" class="button" id="restart" value="restart">
             </div>
         </div>
