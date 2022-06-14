@@ -37,10 +37,12 @@ let addACard = () => {
 
 // Sum of cardList
 let sumOfCards = () => {
+    let result = 0;
     for (let i = 0; i < cardList.length; i++) {
         result += cardList[i];
     }
-    sum.textContent(result);
+    console.log(result)
+    sum.textContent=result;
 }
 
 
@@ -57,3 +59,6 @@ restartGameButton.addEventListener("click", restartGame);
 
 // Draw a card
 drawCardButton.addEventListener("click", addACard) 
+
+// Fold (repurposed to show sum of cards at the moment)
+foldHandButton.addEventListener("click", sumOfCards)
