@@ -25,5 +25,13 @@ let addInitialCards = () => {
     cardItem.append(cardList);
 }
 
+// Flush the table of cards
+let restartGame = () => {
+    cardItem.remove(cardList);
+}
+
 // Start game function
 startGameButton.addEventListener("click", addInitialCards);
+
+// Restart game
+restartGameButton.addEventListener("click", restartGame);
