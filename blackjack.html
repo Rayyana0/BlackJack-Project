@@ -5,24 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack</title>
+    <style>
+        .button
+        {
+            background-color:green;
+            color:yellow;
+            cursor:pointer;
+
+        }
+        .button:hover
+        {
+            background-color:yellow;
+            color:green;
+        }
+        .label
+        {
+            border:2px solid black;
+            width:5vw;
+            font-family:arial;
+        }
+    </style>
 </head>
 <body>
     <div align="center">
+	<div style="font-family:verdana;font-size:3vw;color:green;text-shadow:-2px -2px yellow">Blackjack</div>
         <div id="nav">
-            <input type="button" id="home" value="home">
-            <input type="button" id="home" value="game">
+            <br>
+            <input type="button" id="home" value="home" onclick="alert('does nothing')">
+            <input type="button" id="home" value="game" onclick="alert('does nothing')">
         </div>
         <div>
+		    <br>
             <table cellpadding="0" cellspacing="0" bordercolor="black" border="1">
-                <tr><td style="border:2px solid black" align="center">card</td></tr>
+                <tr><td  class="label" align="center"">card</td></tr>
                 <tr><td style="border:2px solid black"><div id="card"></div></td></tr>
             </table>
 
             <div>
-                <input type="button" id="game" value="start game">
-                <input type="button" id="draw" value="draw a card">
-                <input type="button" id="fold" value="fold">
-                <input type="button" id="restart" value="restart">
+		        <br>
+                <input type="button" class="button" id="game" value="start game">
+                <input type="button" class="button" id="draw" value="draw a card">
+                <input type="button" class="button" id="fold" value="fold">
+                <input type="button" class="button" id="restart" value="restart">
             </div>
         </div>
     </div>
