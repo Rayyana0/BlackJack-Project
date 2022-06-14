@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack</title>
     <style>
-        .button
+        .title
         {
-            background-color:green;
-            color:yellow;
-            cursor:pointer;
-
-        }
-        .button:hover
-        {
-            background-color:yellow;
-            color:green;
+            font-family:verdana;
+            font-size:3vw;
+            color:maroon;
+            text-shadow:-2px -2px skyblue
         }
         .label
         {
@@ -24,11 +19,27 @@
             width:5vw;
             font-family:arial;
         }
+        .button
+        {
+            background-color:maroon;
+            border:2px solid skyblue;
+            color:skyblue;
+            width:10vw;
+            height:4vh;
+            cursor:pointer;
+
+        }
+        .button:hover
+        {
+            background-color:skyblue;
+            border-color:maroon;
+            color:maroon;
+        }
     </style>
 </head>
 <body>
     <div align="center">
-	<div style="font-family:verdana;font-size:3vw;color:green;text-shadow:-2px -2px yellow">Blackjack</div>
+	<div class="title">Blackjack</div>
         <div id="nav">
             <br>
             <input type="button" id="home" value="home" onclick="alert('does nothing')">
@@ -42,9 +53,12 @@
             </table>
 
             <div>
-		        <br>
+		        <br><br>
                 <input type="button" class="button" id="game" value="start game">
                 <input type="button" class="button" id="draw" value="draw a card">
+            </div>
+            <div>
+                <br>
                 <input type="button" class="button" id="fold" value="fold">
                 <input type="button" class="button" id="restart" value="restart">
             </div>
