@@ -6,7 +6,7 @@ const startGameButton = document.querySelector("#game");
 const drawCardButton = document.querySelector("#draw");
 const foldHandButton = document.querySelector("#fold");
 const restartGameButton = document.querySelector("#restart");
-const sum = document.querySelector("#message");
+const message = document.querySelector("#message");
 
 // Random number generator
 function randomCardNumber() {
@@ -43,7 +43,7 @@ let sumOfCards = () => {
         result += cardList[i];
     }
     console.log(result)
-    sum.value=result;
+    message.value=result;
 }
 
 
