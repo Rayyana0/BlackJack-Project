@@ -20,7 +20,7 @@ let initialCard1 = randomCardNumber();
 let initialCard2 = randomCardNumber();
 
 
-// Add initial card valules to table method
+// Add initial card values to table method
 let addInitialCards = () => {
     cardList = [initialCard1, initialCard2];
     cardItem.innerHTML+=cardList+"<br>";
@@ -34,6 +34,11 @@ let addACard = () => {
     cardItem.innerHTML+=cardList+"<br>";
     console.log(cardList);
     sumOfCards();
+    if (sumOfCards() > 21) {
+        console.log("Bust! Try again.")
+    } else {
+        console.log("Draw another?")
+    }
 }
 
 // Sum of cardList
@@ -44,6 +49,7 @@ let sumOfCards = () => {
     }
     console.log(result)
     sum.textContent=result;
+    return result;
 }
 
 
