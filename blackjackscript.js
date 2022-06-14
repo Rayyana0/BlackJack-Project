@@ -16,12 +16,14 @@ function randomCardNumber() {
 
 // Additional Variables
 let cardList = [];
-let initialCard1 = randomCardNumber();
-let initialCard2 = randomCardNumber();
+let initialCard1 = 0;
+let initialCard2 = 0;
 
 
 // Add initial card valules to table method
 let addInitialCards = () => {
+    initialCard1 = randomCardNumber();
+    initialCard2 = randomCardNumber();
     cardList = [initialCard1, initialCard2];
     cardItem.innerHTML+=cardList+"<br>";
     console.log(cardList);
