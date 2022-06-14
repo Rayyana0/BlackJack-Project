@@ -23,8 +23,7 @@ let initialCard2 = randomCardNumber();
 // Add initial card valules to table method
 let addInitialCards = () => {
     cardList = [initialCard1, initialCard2];
-    cardItem.innerHTML+=initialCard1+"<br>";
-    cardItem.innerHTML+=initialCard2+"<br>";
+    cardItem.innerHTML+=cardList+"<br>";
     console.log(cardList);
     sumOfCards();
 }
@@ -32,7 +31,7 @@ let addInitialCards = () => {
 // Add a card
 let addACard = () => {
     cardList.push(randomCardNumber());
-    cardItem.innerHTML+=randomCardNumber()+"<br>";
+    cardItem.innerHTML+=cardList+"<br>";
     console.log(cardList);
     sumOfCards();
 }
