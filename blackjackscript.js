@@ -62,5 +62,5 @@ restartGameButton.addEventListener("click", restartGame);
 // Draw a card
 drawCardButton.addEventListener("click", addACard) 
 
-// Fold (repurposed to show sum of cards at the moment)
-foldHandButton.addEventListener("click", sumOfCards)
+// Fold hand
+
