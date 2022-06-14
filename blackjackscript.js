@@ -43,7 +43,7 @@ let sumOfCards = () => {
         result += cardList[i];
     }
     console.log(result)
-    sum.textContent=result;
+    sum.value=result;
 }
 
 
