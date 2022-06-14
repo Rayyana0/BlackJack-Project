@@ -9,6 +9,8 @@ const restartGameButton = document.querySelector("#restart");
 
 // Additional Variables
 let cardList = [];
+let initialCard1;
+let initialCard2;
 
 // Functions
 function randomCardNumber() {
@@ -19,10 +21,19 @@ function randomCardNumber() {
 
 // Add initial card valules to table method
 let addInitialCards = () => {
-    let initialCard1 = randomCardNumber();
-    let initialCard2 = randomCardNumber();
-    cardList = [initialCard1, initialCard2]
-    cardItem.append(cardList);
+    initialCard1 = randomCardNumber();
+    initialCard2 = randomCardNumber();
+    
+    cardItem.innerHTML+=initialCard1+"<br>";
+    cardItem.innerHTML+=initialCard2+"<br>";
+
+    cardList = [initialCard1, initialCard2];
+}
+
+// Sum of numbers
+let sumOfNumbers = () => {
+    addInitialCards()
+    console.log(initialCard1 + initialCard2)
 }
 
 // Flush the table of cards
