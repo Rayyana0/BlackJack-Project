@@ -8,7 +8,7 @@ const foldHandButton = document.querySelector("#fold");
 const restartGameButton = document.querySelector("#restart");
 
 // Additional Variables
-
+let cardList = [];
 
 // Functions
 function randomCardNumber() {
@@ -21,8 +21,8 @@ function randomCardNumber() {
 let addInitialCards = () => {
     let initialCard1 = randomCardNumber();
     let initialCard2 = randomCardNumber();
-   cardItem.append(initialCard1 + " ");
-   cardItem.append(initialCard2 + " ");
+    cardList = [initialCard1, initialCard2]
+    cardItem.append(cardList);
 }
 
 // Start game function
